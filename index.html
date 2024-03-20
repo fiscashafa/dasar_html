@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <style>
+      .bold {
+        color: blue;
+      }
+    </style>
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="logo.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top img-fluid">Fruity
+        </a>
+
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a id="linkHome" class="nav-link bold" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a id="linkContact" class="nav-link" href="#contact">Contact Me</a>
+            </li>
+          </ul>
+      </div>
+  </nav>
+
+  <!-- CARD BARIS PERTAMA -->
+  <div class="d-flex justify-content-evenly" style="padding-top: 85px;" id="home">
+    <div class="card" style="width: 18rem;">
+      <img src="oasis.jpeg" class="card-img-top" alt="">
+      <div class="card-body">
+        <h5 class="card-title">Oasis</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary">Read More</a>
+      </div>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+      <img src="ayang1.jpeg" class="card-img-top" alt="">
+      <div class="card-body">
+        <h5 class="card-title">Ayang</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary">Read More</a>
+      </div>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+      <img src="dhito.jpeg" class="card-img-top" alt="">
+      <div class="card-body">
+        <h5 class="card-title">Ardhito</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary">Read More</a>
+      </div>
+    </div>
+  </div>
+  <br>
+
+  <!-- CARD BARIS KEDUA -->
+  <div class="d-flex justify-content-evenly">
+    <div class="card" style="width: 18rem;">
+      <img src="ayang2.jpeg" class="card-img-top" alt="">
+      <div class="card-body">
+        <h5 class="card-title">Ayang</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary">Read More</a>
+      </div>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+      <img src="dhito.jpeg" class="card-img-top" alt="">
+      <div class="card-body">
+        <h5 class="card-title">Ardhito</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary">Read More</a>
+      </div>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+      <img src="oasis.jpeg" class="card-img-top" alt="">
+      <div class="card-body">
+        <h5 class="card-title">Oasis</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary">Read More</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- FORM -->
+  <form class="container" id="contact" style="padding-top: 75px;">
+    <h1><a class="link-offset-2 link-underline link-underline-opacity-0" href="#">Contact Me</a></h1>
+    <p>If you need help, please contact us via the form below</p>
+        
+    <div class="mb-3">
+      <label for="email" class="form-label">Email</label>
+      <input type="email" class="form-control" placeholder="Enter email" id="email" aria-describedby="emailHelp">
+    </div>
+
+    <div class="row">
+      <div class="col mb-3">
+        <label for="name1" class="form-label">First Name</label>
+        <input type="text" class="form-control" placeholder="Enter Name" aria-label="First name">
+      </div>
+      <div class="col mb-3">
+        <label for="name2" class="form-label">Last Name</label>
+        <input type="text" class="form-control" placeholder="Enter Name" aria-label="Last name">
+      </div>
+    </div>
+
+    <div class="mb-3">
+      <label for="message" class="form-label">Message</label>
+      <textarea class="form-control" id="message" rows="3"></textarea>
+    </div>
+
+    <div class="mb-3 form-check">
+      <input type="checkbox" class="form-check-input" id="checkbox">
+      <label class="form-check-label" for="checkbox">I agree to the terms and conditions</label>
+    </div>
+    <button type="submit" class="btn btn-primary">Send</button>
+  </form>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+
+  <script>
+    window.addEventListener('scroll', function() {
+      // Get Posisi Scroll dan masukkan ke Variabel srollPosition
+      let scrollPosition = window.scrollY;
+      // Get ID linkHome
+      let navHome = document.getElementById('linkHome')
+      // getID linkContact
+      let navContact = document.getElementById('linkContact')
+
+      // IF Posisi Scroll >= 0 & <= 600
+      if (scrollPosition >= 0 && scrollPosition <= 600) {
+        navHome.classList.add('bold');
+        navContact.classList.remove('bold')
+      } 
+      else if (scrollPosition >= 700) {
+        navHome.classList.remove('bold');
+        navContact.classList.add('bold');
+      }
+
+      console.log('Posisi Y Scroll = ', scrollPosition)
+    });
+  </script>
+</body>
+</html>
